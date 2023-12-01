@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Gentium Book Plus', serif;
+}
+
+
+body {
+	position:relative;
+  background: linear-gradient(rgba(26, 23, 27, 0.5), rgba(26, 23, 27, 0.5)), url(../images/pozadina2.jpg);
+  background-color: #a1926b;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+header, footer {
+  width: 100%;
+}
+
+			/* HEADER NAV KONTAKT ADRESA */
+
+header {
+  border-bottom: 6px solid #ece5d5;
+  background-color: #1a171b;
+}
+
+#kontakt {
+  float: right;
+  margin-top: -70px;
+  margin-right: 50px;
+  text-align: center;
+  color: #ece5d5;
+}
+
+#adresa {
+  margin-top: -80px;
+  margin-left: 50px;
+  float: left;
+  text-align: center;
+  color: #ece5d5;
+}
+
+header nav, nav {
+  background-color: #1a171b;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left:-25px;
+}
+
+header nav a {
+  color: #ece5d5;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+
+header nav .selectable:hover {
+  background-color: rgba(110, 100, 100, 0.8);
+}
+
+nav img {
+  width: 300px;
+}
+
+			/* HEADER NAV KONTAKT ADRESA */
+			
+			/* POCETNA STRANA SLOGAN, HLEB, PECIVO, AKCIJE, COUNTDOWN... */
+
+#pocetna {
+	display:flex;
+	justify-content:center;
+	padding:70px;
+}
+
+#pocetna img{
+	margin-left:30px;
+	animation-name: fadein;
+	animation-duration:2s;
+}
+
+#vreme-rada {
+	margin-right:150px;
+	margin-top:100px;
+	text-align:center;
+	font-size:21px;
+	color:#e5e2d2;
+	animation-name: fadein;
+	animation-duration:2s;
+}
+
+#akcija {
+	position:relative;
+	margin-left:150px;
+	margin-top:100px;
+	text-align:center;
+	font-size:21px;
+	color:#e5e2d2;
+	animation-duration:2s;
+	animation-name: fadein;
+}
+
+#akcija h1 {
+	letter-spacing:4px;
+}
+
+#akcija p.countdown{
+	font-size:30px;
+	margin-top:-30px;
+	color:#e5e2d2;
+}
+
+#nasi-proizvodi-quick {
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+  color: #ece5d5;
+  	animation-name: fadein;
+	animation-duration:1s;
+}
+
+#nasi-proizvodi-quick h1 {
+  text-align: center;
+}
+
+.hlebovipeciva {
+  color: #2d2a30;
+  align-items: center;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  margin-left: 170px;
+  margin-top: 40px;
+  background-color: #ece5d5;
+  letter-spacing: 6px;
+  font-size: 20px;
+  border: 5px solid #2d2a30;
+  box-shadow: 0px 0px 5px 5px rgba(60, 60, 60, 0.3);
+}
+
+.hlebovipeciva img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+#pogledajjos {
+	width:130px;
+	padding:10px;
+	transition:0.2s;
+	text-align:center;
+	margin:30px auto 0px auto;
+}
+
+#pogledajjos a{
+	background-color:rgba(236, 229, 213, 0.6);
+	padding:10px;
+	color:black;
+	transition:0.3s;
+}
+
+#pogledajjos a:hover{
+	background-color:rgba(236, 229, 213, 1);
+	padding:15px;
+	color:black;
+}
+
+.slikeproizvodi img {
+  border: 6px solid #ece5d5;
+  box-shadow: 0px 0px 15px 0px #000;
+}
+
+.slikeproizvodi h2 {
+  text-align: center;
+  color: white;
+}
+
+			/* POCETNA STRANA HLEB, PECIVO, AKCIJE, COUNTDOWN... */
+
+			/* POCETNA MAIN BODY CSS */
+
+.main {
+  width: 100%;
+  height: 2100px;
+  background: #ece5d5;
+  border-top: 20px solid #1a171b;
+}
+
+.main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 25px;
+  font-weight: bold;
+}
+article {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 600px;
+  font-size: 25px;
+  background-color: #b0a27f;
+  box-shadow: 0px 0px 15px 0px;
+}
+
+article p {
+  max-width: 850px;
+  margin-top: 11%;
+  margin-left: 120px;
+}
+
+article img {
+  float: right;
+  margin-top: -250px;
+  margin-right: 50px;
+  width: 420px;
+  box-shadow: 0px 0px 15px 0px;
+}
+
+article a {
+  position: relative;
+  top: 80px;
+  left: 685px;
+  color: #fff;
+  background-color: rgba(100, 80, 20, 0.5);
+  padding: 15px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+			/* MAIN BODY CSS */
+
+			/* ACTIVE KLASA */
+
+.active {
+  background-color: rgba(165, 155, 150, 0.7);
+}
+
+			/* ACTIVE KLASA */
+
+			/* GALERIJA POCETNA */
+
+.galerija1, .galerija2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.galerija1 img, .galerija2 img {
+  width: 320px;
+  margin: 0 50px 10px 10px;
+  border: 5px solid #2d2a30;
+  box-shadow: 0px 0px 10px 0px;
+}
+			/* GALERIJA POCETNA */
+			
+			/* GROW ANIMACIJA */
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+			/* GROW ANIMACIJA */
+
+hr {
+  margin-top: 30px;
+  border-top: 5px solid #2d2a30;
+  border-bottom: 5px solid #2d2a30;
+  width: 50%;
+  margin-left: 25%;
+}
+
+			/* FUTER */
+			
+footer {
+position:relative;
+  background-color: #1a171b;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ece5d5;
+  bottom: 0px;
+  border-top: 6px solid #ece5d5;
+margin-bottom:0;
+}
+
+footer a, .social-links a, .navigation a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links {
+  width: 360px;
+  position: relative;
+  top: 25px;
+  right: 20px;
+  float: right;
+}
+
+.sitemap-rss{
+	float:left;
+	position:relative;
+	top:25px;
+	width:360px;
+}
+
+.social-links a, .navigation a, .sitemap-rss a{
+  color: #ece5d5;
+  font-size: 18px;
+}
+
+.navigation {
+  display: inline-block;
+  margin: 15px 15px 0px 20px;
+}
+
+.navigation a {
+  color: #ece5d5;
+  text-decoration: none;
+}
+
+.navigation a:link {
+  text-decoration: underline;
+}
+
+			/* FUTER */
+			
+			/* BODY STRUKTURA ZA PROIZVODI.HTML */
+
+.proizvodi {
+  display: flex;
+  width: 100%;
+  height: 630px;
+  justify-content: center;
+  margin-top: 147px;
+}
+
+.proizvodi img {
+  margin: 60px 60px 0px 60px;
+}
+
+			/* BODY STRUKTURA ZA PROIZVODI.HTML */
+
+			/* SELECTABLE KLASA */
+			
+.selectable2:hover {
+  background-color: rgba(236, 229, 213, 0.9);
+  color: black;
+}
+
+			/* SELECTABLE KLASA */
+
+			/* BODY STRUKTURA ZA HLEB.HTML PECIVA.HTML SENDVIC.HTML TORTE.HTML */
+.container {
+	width:100%;
+	height:777px;
+	display:flex;
+	justify-content:center;
+}
+
+.container-block {
+	margin-top:20px;
+	padding:10px;
+}
+
+.container-block img{
+	margin-left:20px;
+	margin-top:150px;
+	border:5px solid #ece5d5;
+	box-shadow: 0px 0px 15px 0px;
+}
+
+.container-block h1 {
+	text-align:center;
+	margin-left:10px;
+	color:#ece5d5;
+}
+
+.container-block h3, h4 {
+	text-align:center;
+	margin-left:10px;
+	color:#ece5d5;
+	margin-top:20px;
+}
+
+			/* BODY STRUKTURA ZA HLEB.HTML PECIVA.HTML SENDVIC.HTML TORTE.HTML */
+			
+			/* BODY STRUKTURA ZA ONAMA.HTML */
+
+.container2{
+	width:80%;
+	height:2200px;
+	margin:0 auto;
+	background-color:rgba(236, 229, 213, 1);
+	box-shadow: 0px 40px 30px 0px;
+}
+
+#tekst1{
+	max-width:490px;
+	font-size:30px;
+	margin-left:180px;
+	padding-top:30px;
+}
+
+#slika1{
+	margin-top:30px;
+	float:right;
+	margin-right:195px;
+	width:500px;
+	box-shadow: 0px 0px 15px 2px;
+}
+
+#tekst2{
+	float:right;
+	margin-right:195px;
+	max-width:490px;
+	font-size:30px;
+	margin-top:-360px;
+}
+
+#slika2 {
+	margin-top:60px;
+	margin-left:180px;
+	width:500px;
+	box-shadow: 0px 0px 15px 2px;
+}
+
+#tekst3 {
+	max-width:500px;
+	font-size:30px;
+	margin-left:180px;
+	padding-top:50px;
+}
+
+#slika3 {
+	margin-top:10px;
+	margin-right:195px;
+	float:right;
+	width:500px;
+	box-shadow: 0px 0px 15px 2px;
+}
+
+#tekst4 {
+	text-align:center;
+	margin-top:100px;
+	font-size:30px;
+}
+
+.container2 h2 {
+	font-size:40px;
+	text-align:center;
+}
+
+.line {
+	border-left: 6px solid #1a171b;
+	margin-top:-350px;
+	height: 1185px;
+	position: absolute;
+	left: 50%;
+}
+
+			/* BODY STRUKTURA ZA ONAMA.HTML */
+			
+			/* FORMA ONAMA.HTML */
+
+.holder {
+	margin-top:-50px;
+	margin-left:auto;
+	margin-right:auto;
+    width: 1000px;
+}
+
+.flex-container {
+	display: flex;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(236, 229, 213, 1);
+    justify-content: center;
+    padding: 10px;
+}
+
+#contact h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
+}
+
+.forma-kontakt{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.zakazivanjeforma{
+	padding: 10px;
+}
+
+.zakazivanjeforma input, textarea, button{
+	font-size: 16px;
+	padding: 15px;
+   	margin: 5px 0;
+	border:none;
+	background-color:#ffffff;
+	color:black;
+}
+
+.form-velicina, .form-datum-velicina {
+	width:400px;
+}
+
+.dugmence {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    font-family: 'Gentium Book Plus', serif;
+    letter-spacing: 2px;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+	width:100%;
+	transition:0.2s ease-in-out;
+}
+
+.dugmence:hover {
+	background-color: rgba(110, 100, 100, 0.8);
+	color:white;
+}
+
+			/* FORMA ONAMA.HTML */
+			
+			/* AUTOR.HTML */
+			
+#autor-box{
+	
+	width:80%;
+	margin:0 auto;
+	background-color: rgba(236, 229, 213, 1);
+}
+
+#autor-holder {
+	margin-top:100px;
+	display:flex;
+	justify-content:center;
+}
+
+#autor-holder img{
+	width:300px;
+	margin-right:190px;
+	box-shadow: 0px 0px 10px #000
+}
+
+#autor-holder p{
+	font-size:25px;
+	max-width:500px;
+}
+
+.line2 {
+	border-left: 6px solid #1a171b;
+	margin-top:20px;
+	height: 500px;
+	position: absolute;
+	left: 45%;
+}
+
+
+.line3{
+	width: 500px;
+    margin: 15px auto 15px auto;
+	border-bottom:1px solid #1a171b;
+}
+			/* AUTOR.HTML */
+
+@keyframes fadein{
+	0%{opacity:0;}
+    100%{opacity:1;}
+}

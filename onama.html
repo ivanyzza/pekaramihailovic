@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pekara Mihailović - O nama</title>
+		<meta charset = "UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel = "stylesheet" href = "css/style.css" type = "text/css"/>
+		<link rel="icon" type="image/x-icon" href="images/ikonice/bread.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	
+	<body>
+		
+		<!-- HEADER I NAVIGACIJA -->
+		
+		<header>
+			<nav>
+				<a class = "selectable" href="index.html">POČETNA</a>
+				<a class = "selectable" href="proizvodi.html">PROIZVODI</a>
+					  
+				<div id = "logo">
+					<a href="index.html"> <img src = "images\pekara-logo2.png" alt = "logo"/></a>
+				</div>
+					  
+				<a class = "selectable active" href="onama.html">O NAMA</a>
+				<a class = "selectable" href="autor.html">AUTOR</a>
+			</nav>
+			
+		<!-- ADRESA I KONTAKT TELEFON -->
+		
+		<p id = "adresa">ADRESA <br/>
+			<i class="fa-solid fa-location-dot"></i> Zdravka Čelara 16&#44; 11000<br/>
+			Beograd
+		</p>
+		
+		<p id = "kontakt">KONTAKT<br/>
+			<i class="fa-solid fa-phone"></i> Telefon: 061 1234567
+		</p>
+		</header>
+		
+		<!-- ISTORIJA -->
+		
+		<div class = "container2">
+		
+				<div class = "container3">
+					<div id = "container-block3">
+						<img src = "images/starapekara.jpg" alt = "stara pekara" id = "slika1"/>
+						<p id = "tekst1">U srcu malog grada, pod imenom Sunčev Grad, započela je svoju priču Pekara Mihailović. <br/>
+						Davne 1978. godine, gospodin Marko Mihailović, strastveni pekar sa nasleđenim porodičnim receptima,
+						odlučio je da deli ukusne trenutke sa svojom zajednicom.</p>
+						
+					</div>
+				</div>				
+				
+				<div class = "line"></div>
+				
+				<div class = "container3">
+					<div id = "container-block3">
+						<img src = "images/starapekara2.jpg" alt = "stara pekara" id = "slika2"/>
+						<p id = "tekst2">Ideja za Pekaru Mihailović rodila se u mirisu sveže ispečenog hleba, koji je neodoljivo mamio prolaznike.<br/>
+						Gospodin Mihailović nije samo hteo da pravi običan hleb;
+						želeo je stvarati mala čuda od testa, zadovoljavati nepce svih generacija.</p>
+						
+					</div>
+				</div>
+				
+				<div class = "container3">
+					<div id = "container-block3">
+						<img src = "images/starapekara3.jpg" alt = "stara pekara" id = "slika3"/>
+						<p id = "tekst3">Kroz godine, Pekara Mihailović je postala sinonim za kvalitet i tradiciju.
+						Svako jutro, lokalno stanovništvo se budi uz miris sveže pečenih peciva i ukusnih kolača.
+						Pekara je postala središnje mesto okupljanja, gde se ljudi susreću, dele priče i uživaju u zajedničkom obroku.</p>
+						
+					</div>
+				</div>
+				
+				<p id = "tekst4">Danas, Pekara Mihailović je proširena u više lokacija širom grada, ali je srce i dalje isto -
+				posvećenost pravljenju vrhunskih pekarskih proizvoda koji donose radost i uživanje.</p>
+				<h2>DOBRODOŠLI!</h2>
+				
+				<!-- FORMA -->
+				
+				<div class = "holder">
+					<div class = "flex-container">
+						<div id = "contact">
+							<h1>Obratite nam se</h1>
+							<form class = "forma-kontakt">
+								<div class = "zakazivanjeforma">
+									<input type="text" id="surname" name="name" placeholder="Ime" class="form-velicina" required="">
+								</div>
+								
+								<div class = "zakazivanjeforma">
+									<input type="text" id="name" name="name" placeholder="Prezime" class="form-velicina" required="">
+								</div>
+								
+								<div class = "zakazivanjeforma">
+									<input type="email" id="email" name="email" placeholder="Vaš email" class="form-velicina" required="">
+								</div>
+								
+								<div class = "zakazivanjeforma">
+									<input type="date" id="date" name="date" class="form-input form-datum-velicina" required="">
+								</div>
+								
+								<div class = "zakazivanjeforma">
+									<textarea id="comment" rows="5" placeholder="Opišite Vaše kritike ili pohvale" class = "form-velicina"></textarea>
+								</div>
+								
+								<div class = "zakazivanjeforma">
+									<button type="submit" value="Submit" class="dugmence form-velicina">Pošalji</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<!-- FOOTER I LINKOVI -->
+		
+<footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+		
+		<div class="sitemap-rss">
+            <a href="sitemap.xml" target = "_blank"><i class="fa-solid fa-sitemap"></i> Sitemap</a>
+            <a href="rss.xml" target = "_blank"><i class="fa-solid fa-rss"></i> RSS</a>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html">POČETNA</a>
+            <a href="onama.html">O NAMA</a>
+            <a href="proizvodi.html">PROIZVODI</a>
+	<a href="autor.html">AUTOR</a>
+	
+<p>&copy; 2023 Pekara Mihailović. Sva prava zadržana.</p>
+
+        </div>
+
+</footer>
+		
+	</body>
+</html>

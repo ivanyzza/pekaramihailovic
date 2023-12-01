@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pekara Mihailović</title>
+		<meta charset = "UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel = "stylesheet" href = "css/style.css" type = "text/css"/>
+		<link rel="icon" type="image/x-icon" href="images/ikonice/bread.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	
+	<body>
+	
+		<!-- HEADER I NAVIGACIJA -->
+		
+		<header>
+			<nav>
+				<a class = "selectable active" href="index.html">POČETNA</a>
+				<a class = "selectable" href="proizvodi.html">PROIZVODI</a>
+					  
+				<div id = "logo">
+					<a href="index.html"> <img src = "images\pekara-logo2.png" alt = "logo"/></a>
+				</div>
+					  
+				<a class = "selectable" href="onama.html">O NAMA</a>
+				<a class = "selectable" href="autor.html">AUTOR</a>
+				
+			</nav>	
+		
+		<!-- ADRESA I KONTAKT TELEFON -->
+		
+		<p id = "adresa">ADRESA <br/>
+			<i class="fa-solid fa-location-dot"></i> Zdravka Čelara 16&#44; 11000<br/>
+			Beograd
+		</p>
+		
+		<p id = "kontakt">KONTAKT<br/>
+			<i class="fa-solid fa-phone"></i> Telefon: 061 1234567
+		</p>
+		</header>
+		
+		<!-- HOMEPAGE -->
+		
+		<div id = "pocetna">
+		
+			<div id = "vreme-rada">
+				<h1>RADNO VREME:</h1>
+				<p class = "tekst-vreme">Ponedeljak – Petak : 06 – 21h
+				<br/>
+				Subota : 06 – 14h
+				<br/>
+				Nedelja : NERADNA
+				</p>
+			</div>
+			
+				<img src = "images/slogan3.png" alt = "slogan"/>
+			
+			<div id = "akcija">
+				
+				<h1>AKCIJA!</h1>
+				<p>30% POPUSTA NA SVE PROIZVODE!</p> </br>
+				<p id="demo" class = "countdown"></p>
+			<script>
+				function getCountdownDate() {
+				  var storedDate = sessionStorage.getItem("countdownDate");
+				  if (storedDate) {
+					var parsedDate = new Date(parseInt(storedDate, 10));
+					return isNaN(parsedDate) ? null : parsedDate.getTime();
+				  } else {
+					
+					var newCountDownDate = new Date();
+					newCountDownDate.setDate(newCountDownDate.getDate() + 6);
+					sessionStorage.setItem("countdownDate", newCountDownDate.getTime().toString());
+					return newCountDownDate.getTime();
+				  }
+				}
+
+				var x = setInterval(function () {
+				  var now = new Date().getTime();
+				  var distance = getCountdownDate() - now;
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				  document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+				  if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+				window.addEventListener('beforeunload', function() {
+				  sessionStorage.removeItem("countdownDate");
+				});
+			</script>
+		</div>
+		
+		</div>
+		
+		<!-- HOMEPAGE -->
+		
+		<!-- PROIZVODI -->
+		
+	<div id = "nasi-proizvodi-quick">
+	
+		<div id = "naslov">
+			<h1>NAŠI PROIZVODI</h1>
+		</div>
+		
+		<div class = "hlebovipeciva grow">
+			<h2>HLEB</h2>
+			<a href = "hleb.html"><img src = "images/ikonice/bread.png" alt = "hleb"/></a>
+		</div>
+		
+		<div class = "hlebovipeciva grow">
+			<h2>PECIVA</h2>
+			<a href = "peciva.html"><img src = "images/ikonice/croissant.png" alt = "peciva"/></a>
+		</div>
+		
+		<div class = "hlebovipeciva grow">
+			<h2>SENDVIČI</h2>
+			<a href = "sendvic.html"><img src = "images/ikonice/sandwich.png" alt = "sendvic"/></a>
+		</div>
+		
+		<div class = "hlebovipeciva grow">
+			<h2>POSLASTICE</h2>
+			<a href = "torte.html"><img src = "images/ikonice/donut.png" alt = "krofna"/></a>
+		</div>
+		
+		<br/>
+		
+		<div id = "pogledajjos">
+			<a class = "selectable2" href = "proizvodi.html">POGLEDAJ JOŠ</a>
+		</div>
+		<br/>
+		<br/>
+	</div>
+		
+	
+	<!-- MAIN BODY STRUKTURA -->
+	
+		<div class = "main">
+			<article>
+				<h1>O NAMA</h1>
+				<p>U srcu malog grada, pod imenom Sunčev Grad, započela je svoju priču Pekara Mihailović. <br/>
+				Davne 1978. godine, gospodin Marko Mihailović, strastveni pekar sa nasleđenim porodičnim receptima,
+				odlučio je da deli ukusne trenutke sa svojom zajednicom.</p>
+				
+				<img src = "images/starapekara.jpg" alt = "stara pekara"/>
+				<a class = "selectable2" href = "onama.html">POGLEDAJ JOŠ</a>
+			</article>
+			
+			<h1>GALERIJA</h1>
+			<div class = "galerija1">
+				<img src = "images/galerija/hlebkorpa.jpg" class = "grow" alt = "hleb u korpi" />
+				<img src = "images/galerija/hlebkesa.jpg" class = "grow" alt = "hleb u kesi" />
+				<img src = "images/galerija/kroasani.jpg" class = "grow" alt = "kroasani" />
+				<img src = "images/galerija/hlebpolica.jpg" class = "grow" alt = "hlebovi na polici" />
+			</div>
+			<hr/>
+			<div class = "galerija2">
+				<img src = "images/galerija/sendvici.jpg" class = "grow" alt = "sendvici" />
+				<img src = "images/galerija/sendvictost.jpg" class = "grow" alt = "sendvic tost" />
+				<img src = "images/galerija/sendvicrukola.jpg" class = "grow" alt = "sendvic rukola" />
+				<img src = "images/galerija/torte.jpg" class = "grow" alt = "torte" />
+			</div>
+		</div>
+		
+		<!-- FOOTER I LINKOVI -->
+		
+
+	</body>
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>        
+		
+	<div class="sitemap-rss">
+            <a href="sitemap.xml" target = "_blank"><i class="fa-solid fa-sitemap"></i> Sitemap</a>
+            <a href="rss.xml" target = "_blank"><i class="fa-solid fa-rss"></i> RSS</a>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html">POČETNA</a>
+            <a href="onama.html">O NAMA</a>
+            <a href="proizvodi.html">PROIZVODI</a>
+	<a href="autor.html">AUTOR</a>
+	    
+<p>&copy; 2023 Pekara Mihailović. Sva prava zadržana.</p>
+
+        </div>
+
+    </footer>
+</html>
