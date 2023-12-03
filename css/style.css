@@ -24,6 +24,9 @@ header, footer {
 }
 
 			/* HEADER NAV KONTAKT ADRESA */
+.cleaner {
+	clear:both;
+}
 
 header {
   border-bottom: 6px solid #ece5d5;
